@@ -1,31 +1,48 @@
-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80vh;
+@import url(var.css);
+.text-brown {
+  color: var(--base-brown);
 }
 
-form div {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
+.text-beige {
+  color: var(--base-beige);
 }
 
-form input {
-  outline: unset;
-  padding: 20px;
-  width: 300px;
-  border: 1px solid brown;
-  border-radius: 10px;
+.text-animation{
+  animation-delay: 0.5s;
 }
 
-form input:focus:focus {
-  background-color: antiquewhite;
+.text-animation:hover{
+  cursor:default;
+}
+.text-custom{
+  padding: 0 !important;
+  font-size: 12px;
 }
 
-.btn-entrar {
-  background-color: brown;
-  color: white;
-  cursor: pointer;
-  font-size: 20px;
+.button-custom button {
+  padding: 15px 60px 15px 60px;
+  background-color: var(--base-brown) !important;
+  border: none !important;
+}
+
+.button-custom button:hover {
+  background-color: #8a5e4e !important;
+}
+
+              /* elements together */
+a {
+  color: inherit !important;
+}
+.link-hover a:hover{
+  color: var(--base-beige) !important;
+}
+
+i {
+  color: black !important;
+  font-size: 30px
+}
+
+i:hover{
+  color: var(--base-beige) !important;
+  transform: scale(1.1);
 }

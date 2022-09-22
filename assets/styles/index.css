@@ -12,6 +12,7 @@ nav {
   z-index: 10;
   color: #626262;
   width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .navbar-person {
@@ -20,11 +21,30 @@ nav {
   padding-right: 12px;
 }
 
+.nav-link {
+  color: var(--base-beige) !important;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+  text-align: center;
+}
+
+.active .nav-link {
+  color: var(--base-brown) !important;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+.navbar-toggler span {
+  color: #171717 !important;
+}
+
 .banner {
   height: 100vh;
   width: 100%;
   max-width: 100%;
-  background-image: url("../images/bgImage.jpg");
+  background-image: url("../images/bgimg.png");
   background-position: center;
 
   /* Center the image */
@@ -46,6 +66,7 @@ nav {
   align-items: flex-end;
   background: rgba(255, 255, 255, 0.85);
   border-radius: 50px 0 0 50px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .banner-content h2 {

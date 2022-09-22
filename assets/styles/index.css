@@ -26,57 +26,51 @@ nav {
   max-width: 100%;
   background-image: url("../images/bgImage.jpg");
   background-position: center;
+
   /* Center the image */
   background-size: cover;
   background-repeat: no-repeat;
 
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   justify-content: center;
+  align-items: flex-end;
 }
 
 .banner-content {
-  height: 200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #171717;
-  border-radius: 5px;
+  padding: 1% 5%;
 
+  color: white;
+  align-items: flex-end;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 50px 0 0 50px;
 }
 
 .banner-content h2 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  font-size: 72px;
+  font-size: 58px;
   line-height: 84px;
 
-  color: white;
+  color: var(--base-beige);
 }
 
 .banner-content span {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 28px;
 
-  color: #ffffff;
-}
-
-.btn-green {
-  background: white !important;
-  transition: opacity 0.2s ease;
-}
-
-.btn-green:hover {
-  background: rgba(51, 187, 105, 0.07) !important;
+  color: var(--base-brown);
 }
 
 /* carousel */
-.carousel-item {}
+.carousel-item {
+}
 
 /* Content */
 .content {

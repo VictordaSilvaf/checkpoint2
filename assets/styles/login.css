@@ -46,3 +46,11 @@ i:hover{
   color: var(--base-beige) !important;
   transform: scale(1.1);
 }
+
+
+
+@media (max-width:260px){
+  .button-custom button{
+    padding: 20px !important;
+  }
+}

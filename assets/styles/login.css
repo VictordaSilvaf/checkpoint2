@@ -1,11 +1,4 @@
 @import url(var.css);
-.text-brown {
-  color: var(--base-brown);
-}
-
-.text-beige {
-  color: var(--base-beige);
-}
 
 .text-animation{
   animation-delay: 0.5s;

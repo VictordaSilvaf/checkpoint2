@@ -44,7 +44,7 @@ nav {
   height: 100vh;
   width: 100%;
   max-width: 100%;
-  background-image: url("../images/bgimg.png");
+  background-image: url("../images/bgimg.jpg");
   background-position: center;
 
   /* Center the image */
@@ -117,24 +117,82 @@ nav {
 .card-box {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 
-.card-box .card {
+.card-box .card-item {
   width: 33.333%;
   height: 500px;
-  padding: 1% 3%;
   border: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1%;
 }
 
-.card .card-content {
-  width: 100%;
-  height: 100%;
-  background-color: #e51b3e;
+.card-item .card-img1 {
+  background-image: url("../images/paises/amsterdam.png");
 }
 
-.card .card-content img{
+.card-item .card-img2 {
+  background-image: url("../images/paises/australia.png");
+}
+
+.card-item .card-img3 {
+  background-image: url("../images/paises/canada.png");
+}
+
+.card-item .card-img4 {
+  background-image: url("../images/paises/emiradosArabes.png");
+}
+
+.card-item .card-img5 {
+  background-image: url("../images/paises/inglaterra.png");
+}
+
+.card-item .card-img6 {
+  background-image: url("../images/paises/irlanda.png");
+}
+
+.card-item .card-content {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: relative;
+  background-position: center;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+}
+
+.card-item .card-content .content-details {
+  width: 80%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 12px 0 0 12px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.card-item .card-content .content-details button {
+  width: auto;
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  display: flex;
+  white-space: nowrap;
+  text-align: center;
 }
 
 /* Footer */
@@ -182,22 +240,42 @@ i {
   cursor: default;
 }
 
+
+@media screen and (max-width: 1000px) {
+  .card-box .card-item {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card-box .card-item {
+    width: 100%;
+  }
+  
+  .banner-content {
+    padding: 4%;
+    width: 100%;
+    border-radius: 0px;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center;
+  }
+  
+  .banner-content h2 {
+    font-size: 3rem;
+  }
+
+  .banner-content span {
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (min-width: 767px) {
   .content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 20px 100px;
-  }
-
-  .content .card-background {
-    width: 33.33%;
-    transform: scale(0.95);
-    transition: transform 0.2s ease;
-  }
-
-  .content .card-background:hover {
-    transform: scale(0.965);
   }
 
   .footer-content {

@@ -1,0 +1,131 @@
+@import url(var.css);
+
+nav {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  position: fixed !important;
+  z-index: 10;
+  color: #626262;
+  width: 100%;
+}
+
+.navbar-person {
+  width: 100%;
+  justify-content: end;
+  padding-right: 12px;
+}
+
+.banner {
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  background-image: url("../images/au01.jpg");
+  background-position: center;
+  /* Center the image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.banner-content h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 84px;
+  color: white;
+}
+
+.content h1 {
+  font-family: "Roboto";
+  margin-bottom: 0.5rem;
+  font-weight: 900;
+  line-height: 84px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: #734230;
+}
+
+.content .section-title {
+  padding: 60px 50px;
+}
+
+
+
+/* ---- Footer ----- */
+
+footer {
+  flex: 1;
+  background-color: #171717;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 30px;
+  color: white;
+}
+
+.footer-content p,
+i {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-student {
+  padding: 10px 0;
+}
+
+.footer-final p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 60px;
+}
+
+.icon-list img {
+  margin-right: 8px;
+}
+
+.active {
+  color: #e51b3e !important;
+  cursor: default;
+}
+
+@media screen and (min-width: 767px) {
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 100px;
+  }
+
+  .content .card-background {
+    width: 33.33%;
+    transform: scale(0.95);
+    transition: transform 0.2s ease;
+  }
+
+  .content .card-background:hover {
+    transform: scale(0.965);
+  }
+
+  .footer-content {
+    flex-direction: row;
+  }
+
+  .footer-final {
+    width: 100%;
+  }
+}

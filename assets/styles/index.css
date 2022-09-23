@@ -12,6 +12,7 @@ nav {
   z-index: 10;
   color: #626262;
   width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .navbar-person {
@@ -20,63 +21,77 @@ nav {
   padding-right: 12px;
 }
 
+.nav-link {
+  color: var(--base-beige) !important;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+  text-align: center;
+}
+
+.active .nav-link {
+  color: var(--base-brown) !important;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+.navbar-toggler span {
+  color: #171717 !important;
+}
+
 .banner {
   height: 100vh;
   width: 100%;
   max-width: 100%;
-  background-image: url("../images/bgImage.jpg");
+  background-image: url("../images/bgimg.png");
   background-position: center;
+
   /* Center the image */
   background-size: cover;
   background-repeat: no-repeat;
 
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   justify-content: center;
+  align-items: flex-end;
 }
 
 .banner-content {
-  height: 200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #171717;
-  border-radius: 5px;
+  padding: 1% 5%;
 
+  color: white;
+  align-items: flex-end;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 50px 0 0 50px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .banner-content h2 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  font-size: 72px;
+  font-size: 58px;
   line-height: 84px;
 
-  color: white;
+  color: var(--base-beige);
 }
 
 .banner-content span {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 28px;
 
-  color: #ffffff;
-}
-
-.btn-green {
-  background: white !important;
-  transition: opacity 0.2s ease;
-}
-
-.btn-green:hover {
-  background: rgba(51, 187, 105, 0.07) !important;
+  color: var(--base-brown);
 }
 
 /* carousel */
-.carousel-item {}
+.carousel-item {
+}
 
 /* Content */
 .content {
@@ -232,4 +247,134 @@ i {
   .footer-final {
     width: 100%;
   }
+}
+
+/* Parallax */
+#parallax-world-of-ugg .title {
+  background: white;
+  padding: 60px;
+  margin: 0 auto;
+  text-align: center;
+}
+#parallax-world-of-ugg .title h1 {
+  font-size: 35px;
+  letter-spacing: 8px;
+}
+
+#parallax-world-of-ugg .block {
+  background: white;
+  padding: 60px;
+  width: 820px;
+  margin: 0 auto;
+  text-align: justify;
+}
+#parallax-world-of-ugg .block-gray {
+  background: #f2f2f2;
+  padding: 60px;
+}
+#parallax-world-of-ugg .section-overlay-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+}
+
+#parallax-world-of-ugg .parallax-one {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 30px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1418075285575-c402f1f7340f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80);
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+#parallax-world-of-ugg .parallax-two {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 30px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1476977251893-330046eb5ec8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#parallax-world-of-ugg .parallax-three {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 30px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1624138784614-87fd1b6528f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1333&q=80);
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#parallax-world-of-ugg .line-break {
+  border-bottom: 1px solid black;
+  width: 150px;
+  margin: 0 auto;
+}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {
+    padding: 40px;
+    width: 620px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {
+    padding: 30px;
+    width: 420px;
+  }
+  #parallax-world-of-ugg h2 {
+    font-size: 30px;
+  }
+  #parallax-world-of-ugg .block {
+    padding: 30px;
+  }
+  #parallax-world-of-ugg .parallax-one,
+  #parallax-world-of-ugg .parallax-two,
+  #parallax-world-of-ugg .parallax-three {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {
+    padding: 30px 15px;
+    width: 290px;
+  }
+}
+
+.font-brown {
+  color: var(--base-brown);
+}
+
+.font-beige {
+  color: var(--base-beige);
+}
+
+.font-black {
+  color: var(--base-black);
 }

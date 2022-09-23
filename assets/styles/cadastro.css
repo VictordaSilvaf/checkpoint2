@@ -1,0 +1,56 @@
+@import url(var.css);
+.text-brown {
+  color: var(--base-brown);
+}
+
+.text-beige {
+  color: var(--base-beige);
+}
+
+.text-animation{
+  animation-delay: 0.5s;
+}
+
+.text-animation:hover{
+  cursor:default;
+}
+.text-custom{
+  padding: 0 !important;
+  font-size: 12px;
+}
+
+.button-custom button {
+  padding: 15px 60px 15px 60px;
+  background-color: var(--base-brown) !important;
+  border: none !important;
+}
+
+.button-custom button:hover {
+  background-color: #8a5e4e !important;
+}
+
+              /* elements together */
+a {
+  color: inherit !important;
+}
+.link-hover a:hover{
+  color: var(--base-beige) !important;
+}
+
+i {
+  color: black !important;
+  font-size: 30px
+}
+
+i:hover{
+  color: var(--base-beige) !important;
+  transform: scale(1.1);
+}
+
+
+
+@media (max-width:260px){
+  .button-custom button{
+    padding: 20px !important;
+  }
+}

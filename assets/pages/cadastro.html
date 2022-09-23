@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Rava | Login</title>
-  <link rel="stylesheet" href="../styles/login.css">
+  <title> Rava | Cadastro</title>
+  <link rel="stylesheet" href="../styles/cadastro.css">
 
   <!-- Styles -->
     <link rel="stylesheet" href="../styles/index.css" />
@@ -76,31 +76,49 @@
         <div class="col-lg-6 mb-5 mb-lg-0 ">
           <div class="card shadow-sm">
             <div class="card-body py-5 px-md-5">
+
+
               <form>
+                <!-- 2 column grid layout with text inputs for the first and last names -->
                 <div class="row">
-                  <div class="col-md-12 mb-6">
+                  <div class="col-md-6 mb-4">
                     <div class="form-outline">
-                      <label class="form-label fw-bold" for="form3Example1">Email ou nome de usuário:</label>
-                      <input placeholder="Digite seu email ou usuário" type="text" id="form3Example1" class="form-control" required/>
+                      <label class="form-label" for="form3Example1">*Nome</label>
+                      <input type="text" id="form3Example1" class="form-control" placeholder="Digite seu nome" required />
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <label class="form-label" for="form3Example2">*Sobrenome</label>
+                      <input type="text" id="form3Example2" class="form-control" placeholder="Digite seu sobrenome" required/>
                     </div>
                   </div>
                 </div>
-              
-                <div class="form-outline mb-2 pt-2">
-                  <label class="form-label fw-bold" for="form3Example4">Senha:</label>
-                  <input placeholder="Digite sua senha" type="password" id="form3Example4" class="form-control" required/>
+
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example3">*Email</label>
+                  <input type="email" id="form3Example3" class="form-control" placeholder="Digite seu email" required />
                 </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <label class="form-label" for="form3Example4">*Senha</label>
+                  <input type="password" id="form3Example4" class="form-control" placeholder="Digite uma senha válida" required/>
+                </div>
+
 
                 <!-- Forgot Password -->
                 <div class="container text-end text-custom link-hover">
                   <div class="text-custom">
                     <a href="">Esqueceu sua senha?</a>
                   </div>
+                  
 
                 <!-- Submit button -->
 
                 <div class="d-flex justify-content-center mb-3 mt-4 button-custom" >
-                    <button type="submit" class="btn btn-primary btn-block mb-4"> Entrar</button>
+                    <button type="submit" class="btn btn-primary btn-block mb-4"> Enviar</button>
                 </div>
 
                 <!-- Register buttons -->
@@ -125,7 +143,7 @@
               </form>
               <div class="container mb-3 text-end text-custom">
                 <div class="text-custom fs-6 mt-5 text-center text-brown link-hover">
-                  <a href="./cadastro.html"> Não tem conta? Crie agora!</a>
+                  <a href="./login.html"> Já tem uma conta? Faça login!</a>
                 </div>
               </div>
             </div>

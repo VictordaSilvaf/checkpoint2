@@ -1,13 +1,20 @@
 @import url(var.css);
+.text-brown {
+  color: var(--base-brown);
+}
 
-.text-animation {
+.text-beige {
+  color: var(--base-beige);
+}
+
+.text-animation{
   animation-delay: 0.5s;
 }
 
-.text-animation:hover {
-  cursor: default;
+.text-animation:hover{
+  cursor:default;
 }
-.text-custom {
+.text-custom{
   padding: 0 !important;
   font-size: 12px;
 }
@@ -22,26 +29,28 @@
   background-color: #8a5e4e !important;
 }
 
-/* elements together */
+              /* elements together */
 a {
   color: inherit !important;
 }
-.link-hover a:hover {
+.link-hover a:hover{
   color: var(--base-beige) !important;
 }
 
 i {
   color: black !important;
-  font-size: 30px;
+  font-size: 30px
 }
 
-i:hover {
+i:hover{
   color: var(--base-beige) !important;
   transform: scale(1.1);
 }
 
-@media (max-width: 260px) {
-  .button-custom button {
+
+
+@media (max-width:260px){
+  .button-custom button{
     padding: 20px !important;
   }
 }

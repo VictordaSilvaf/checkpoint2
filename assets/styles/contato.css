@@ -1,9 +1,11 @@
-body{
-    background-image: url('https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 @import url(var.css);
+@import url(./components/menu.css);
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1516733725897-1aa73b87c8e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 a {
   color: inherit !important;
@@ -11,9 +13,9 @@ a {
 
 /* classes */
 
-.no-decoration{
-    list-style: none;
-    text-decoration: none;
+.no-decoration {
+  list-style: none;
+  text-decoration: none;
 }
 
 .animation {

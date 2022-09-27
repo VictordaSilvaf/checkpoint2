@@ -1,19 +1,5 @@
 @import url(var.css);
-
-nav {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  /* identical to box height */
-
-  position: fixed !important;
-  z-index: 10;
-  color: #626262;
-  width: 100%;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
+@import url(./components/menu.css);
 
 .navbar-person {
   width: 100%;
@@ -240,7 +226,6 @@ i {
   cursor: default;
 }
 
-
 @media screen and (max-width: 1000px) {
   .card-box .card-item {
     width: 50%;
@@ -251,7 +236,7 @@ i {
   .card-box .card-item {
     width: 100%;
   }
-  
+
   .banner-content {
     padding: 4%;
     width: 100%;
@@ -260,7 +245,7 @@ i {
     justify-content: center !important;
     align-items: center;
   }
-  
+
   .banner-content h2 {
     font-size: 3rem;
   }

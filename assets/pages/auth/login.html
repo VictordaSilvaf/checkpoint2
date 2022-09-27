@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>RAVA Intercâmbios</title>
+    <title>RAVA - Login </title>
 
     <link rel="stylesheet" href="/assets/styles/index.css" />
     <link rel="stylesheet" href="/assets/styles/login.css" />
@@ -15,6 +15,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
@@ -22,14 +23,17 @@
 
     <link rel="shortcut icon" href="/assets/images/icons/logo_rava.ico" />
 
+    <script src="https://kit.fontawesome.com/cc47c4ab6f.js" crossorigin="anonymous"></script>
+    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
+
   </head>
 
   <body>
@@ -74,19 +78,19 @@
       </div>
     </nav>
 
-    <section class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+    <section class="pt-5 section-login">
+      <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
       <div class="container">
         <div class="row gx-lg-5 align-items-center">
-          <div class="col-lg-6 mb-5 mb-lg-0">
-            <h1 class="my-5 display-3 fw-bold ls-tight text-beige animate__animated animate__fadeInLeft text-animation">
+          <div class="col-lg-6 mb-5 mb-lg-0 cursor">
+            <h1 class="my-5 display-3 fw-bold ls-tight text-beige cursor-default">
               Viaje para o exterior <br />
               <span class="text-brown">com a RAVA!</span>
             </h1>
-            <p style="color: hsl(217, 10%, 50.8%)" class=" t animate__animated animate__zoomIn text-animation">
-              Já pensou em viajar para o exterior para concluir seus estudos, fazer uma faculdade ou um curso para
-              melhorar seu conhecimento?
-              Imagina só fazer tudo isso com toda segurança e suporte que uma agência poderia oferecer?
-              Esse é o intuito do RAVA, inscreva-se agora ou entre em contato conosco!
+            <p class="cursor-default" style="color: hsl(217, 10%, 50.8%)">
+              Tem vontade de viajar para o exterior?
+              Conheça novas culturas, pessoas, lugares, pontos turísticos famoso ao redor do mundo, e tudo isso com a segurança e 
+              garantia que a RAVA irá lhe proporcionar! Nosso objetivo é ver sua felicidade ao tornar seus sonhos realidade!
             </p>
           </div>
 
@@ -94,9 +98,9 @@
             <div class="card shadow-sm">
               <div class="card-body py-5 px-md-5">
 
-                <form>
+                <form action="#" method="POST">
                   <div class="row">
-                    <div class="col-md-12 mb-6">
+                    <div class="col-md-12 mb-4">
                       <div class="form-outline">
                         <label class="form-label" for="form3Example1">Email ou nome de usuário:</label>
                         <input placeholder="Digite seu email ou usuário" type="text" id="form3Example1"
@@ -112,7 +116,7 @@
                   </div>
 
                   <!-- Forgot Password -->
-                  <div class="container text-end text-custom link-hover">
+                  <div class="container text-end text-custom link-inherit">
                     <div class="text-custom">
                       <a href="">Esqueceu sua senha?</a>
                     </div>
@@ -127,25 +131,25 @@
                     <div class="text-center">
                       <p>Ou faça login com:</p>
                       <button type="button" class="btn btn-link btn-floating mx-1">
-                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-square-facebook icon-custom"></i>
                       </button>
 
                       <button type="button" class="btn btn-link btn-floating mx-1">
-                        <i class="fab fa-google"></i>
+                        <i class="fab fa-google icon-custom"></i>
                       </button>
 
                       <button type="button" class="btn btn-link btn-floating mx-1">
-                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-twitter icon-custom"></i>
                       </button>
 
                       <button type="button" class="btn btn-link btn-floating mx-1">
-                        <i class="fab fa-github"></i>
+                        <i class="fab fa-github icon-custom"></i>
                       </button>
                     </div>
                 </form>
 
                 <div class="container mb-3 text-end text-custom">
-                  <div class="text-custom fs-6 mt-5 text-center text-brown link-hover">
+                  <div class="text-custom fs-6 mt-5 text-center text-brown">
                     <a href="./cadastro.html"> Não tem conta? Crie agora!</a>
                   </div>
                 </div>

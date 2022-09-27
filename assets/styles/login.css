@@ -9,11 +9,7 @@
   color: var(--base-beige);
 }
 
-.text-animation {
-  animation-delay: 0.5s;
-}
-
-.text-animation:hover {
+.cursor-default:hover {
   cursor: default;
 }
 .text-custom {
@@ -32,19 +28,20 @@
 }
 
 /* elements together */
-a {
+.link-inherit a{
   color: inherit !important;
 }
-.link-hover a:hover {
+
+.link-inherit a:hover {
   color: var(--base-beige) !important;
 }
 
-i {
+.icon-custom{
   color: black !important;
   font-size: 30px;
 }
 
-i:hover {
+.icon-custom:hover {
   color: var(--base-beige) !important;
   transform: scale(1.1);
 }

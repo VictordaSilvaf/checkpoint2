@@ -7,7 +7,6 @@ nav {
   font-size: 18px;
   line-height: 21px;
   /* identical to box height */
-
   position: fixed !important;
   z-index: 10;
   color: #626262;
@@ -46,13 +45,12 @@ nav {
     height: 100vh;
     width: 100%;
     max-width: 100%;
-    background-image: url("../images/au01.jpg");
+    background-image: url("../images/em01.jpg");
     background-position: center;
   
     /* Center the image */
     background-size: cover;
     background-repeat: no-repeat;
-  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,7 +61,6 @@ nav {
     display: flex;
     flex-direction: column;
     padding: 1% 5%;
-  
     color: white;
     align-items: flex-end;
     background: rgba(255, 255, 255, 0.85);
@@ -75,7 +72,6 @@ nav {
     display: flex;
     flex-direction: column;
     padding: 1% 5%;
-  
     color: white;
     align-items: flex-end;
     background-color: #fff;
@@ -87,7 +83,6 @@ nav {
     font-weight: 900;
     font-size: 58px;
     line-height: 84px;
-  
     color: var(--base-brown);
   }
   
@@ -97,7 +92,6 @@ nav {
     font-weight: 900;
     font-size: 58px;
     line-height: 84px;
-  
     color: var(--base-beige);
   }
   
@@ -110,6 +104,7 @@ nav {
   
     color: var(--base-brown);
   }
+
   /*---- CARDS ----*/
 
 .container .card
@@ -221,7 +216,7 @@ footer {
     color: #e51b3e !important;
     cursor: default;
   }
-
+  
   @media screen and (min-width: 767px) {
     .content {
       display: flex;

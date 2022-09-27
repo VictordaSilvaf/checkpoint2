@@ -9,13 +9,10 @@
   color: var(--base-beige);
 }
 
-.text-animation {
-  animation-delay: 0.5s;
+.cursor-default:hover {
+  cursor:default;
 }
 
-.text-animation:hover {
-  cursor: default;
-}
 .text-custom {
   padding: 0 !important;
   font-size: 12px;
@@ -31,20 +28,20 @@
   background-color: #8a5e4e !important;
 }
 
-/* elements together */
-a {
+.link-inherit a{
   color: inherit !important;
 }
-.link-hover a:hover {
+
+.link-inherit a:hover {
   color: var(--base-beige) !important;
 }
 
-i {
+.icon-custom{
   color: black !important;
   font-size: 30px;
 }
 
-i:hover {
+.icon-custom:hover {
   color: var(--base-beige) !important;
   transform: scale(1.1);
 }

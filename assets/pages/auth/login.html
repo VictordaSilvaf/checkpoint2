@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RAVA Intercâmbios</title>
+
+    <link rel="stylesheet" href="/assets/styles/index.css" />
+    <link rel="stylesheet" href="/assets/styles/login.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <link rel="shortcut icon" href="/assets/images/icons/logo_rava.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light d-fixed">
+      <div class="container-fluid d-flex justify-content-between">
+        <a class="navbar-brand" href="/index.html">
+          <img
+            height="50px"
+            src="/assets/images/logo_rava.png"
+            alt="logo_RAVA"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="material-symbols-outlined"> menu </span>
+        </button>
+
+        <div class="collapse navbar-collapse navbar-person" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item item-menu active">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item item-menu">
+              <a class="nav-link" href="/assets/pages/paises.html">Paises</a>
+            </li>
+            <li class="nav-item item-menu">
+              <a class="nav-link" href="/assets/pages/contato.html">Contatos</a>
+            </li>
+            <li class="nav-item item-menu">
+              <a class="nav-link" href="/assets/pages/auth/login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+      <div class="container">
+        <div class="row gx-lg-5 align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <h1 class="my-5 display-3 fw-bold ls-tight text-beige animate__animated animate__fadeInLeft text-animation">
+              Viaje para o exterior <br />
+              <span class="text-brown">com a RAVA!</span>
+            </h1>
+            <p style="color: hsl(217, 10%, 50.8%)" class=" t animate__animated animate__zoomIn text-animation">
+              Já pensou em viajar para o exterior para concluir seus estudos, fazer uma faculdade ou um curso para
+              melhorar seu conhecimento?
+              Imagina só fazer tudo isso com toda segurança e suporte que uma agência poderia oferecer?
+              Esse é o intuito do RAVA, inscreva-se agora ou entre em contato conosco!
+            </p>
+          </div>
+
+          <div class="col-lg-6 mb-5 mb-lg-0 ">
+            <div class="card shadow-sm">
+              <div class="card-body py-5 px-md-5">
+
+                <form>
+                  <div class="row">
+                    <div class="col-md-12 mb-6">
+                      <div class="form-outline">
+                        <label class="form-label" for="form3Example1">Email ou nome de usuário:</label>
+                        <input placeholder="Digite seu email ou usuário" type="text" id="form3Example1"
+                          class="form-control" required />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-outline mb-2 pt-2">
+                    <label class="form-label" for="form3Example4">Senha:</label>
+                    <input placeholder="Digite sua senha" type="password" id="form3Example4" class="form-control"
+                      required />
+                  </div>
+
+                  <!-- Forgot Password -->
+                  <div class="container text-end text-custom link-hover">
+                    <div class="text-custom">
+                      <a href="">Esqueceu sua senha?</a>
+                    </div>
+
+                    <!-- Submit button -->
+
+                    <div class="d-flex justify-content-center mb-3 mt-4 button-custom">
+                      <button type="submit" class="btn btn-primary btn-block mb-4"> Entrar</button>
+                    </div>
+
+                    <!-- Register buttons -->
+                    <div class="text-center">
+                      <p>Ou faça login com:</p>
+                      <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="fa-brands fa-square-facebook"></i>
+                      </button>
+
+                      <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="fab fa-google"></i>
+                      </button>
+
+                      <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="fab fa-twitter"></i>
+                      </button>
+
+                      <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="fab fa-github"></i>
+                      </button>
+                    </div>
+                </form>
+
+                <div class="container mb-3 text-end text-custom">
+                  <div class="text-custom fs-6 mt-5 text-center text-brown link-hover">
+                    <a href="./cadastro.html"> Não tem conta? Crie agora!</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-student">
+            <h3>Victor da Silva</h3>
+            <p>Responsável pelo desenvolvimento de...</p>
+            <div class="icon-list">
+              <a href="#">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-student">
+            <h3>Agnaldo Silva</h3>
+            <p>Responsável pelo desenvolvimento de...</p>
+            <div class="icon-list">
+              <a href="#">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-student">
+            <h3>Ariane Santos</h3>
+            <p>Responsável pelo desenvolvimento de...</p>
+            <div class="icon-list">
+              <a href="#">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-github">a</ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-student">
+            <h3>Railana Ramos</h3>
+            <p>Responsável pelo desenvolvimento de...</p>
+            <div class="icon-list">
+              <a href="#">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-final">
+          <p>Checkpoint 3 desenvolvido em 2022</p>
+        </div>
+      </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+  <!-- ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

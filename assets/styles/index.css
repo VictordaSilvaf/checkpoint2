@@ -1,8 +1,3 @@
-@import url(var.css);
-@import url(./components/menu.css);
-@import url(./components/nav.css);
-@import url(./components/footer.css);
-
 .banner {
   height: 100vh;
   width: 100%;
@@ -160,11 +155,6 @@
 
 .icon-list img {
   margin-right: 8px;
-}
-
-.active {
-  color: #e51b3e !important;
-  cursor: default;
 }
 
 @media screen and (max-width: 1000px) {

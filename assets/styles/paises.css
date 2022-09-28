@@ -1,5 +1,6 @@
 .section-title {
   margin: 20px;
+  margin-top: 80px;
   font-size: 0.5rem;
   font-weight: 700;
   color: #000;
@@ -16,7 +17,8 @@
 
 .card-item1 {
   width: 33.33%;
-  height: 450px;
+  min-height: 350px !important;
+  height: 70vh;
 }
 
 .card-item1 .item {
@@ -111,4 +113,24 @@
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
   animation-delay: 0.4s;
+}
+
+@media screen and (max-width: 1200px) {
+  .card-item1 {
+    width: 50%;
+    min-height: 300px !important;
+    height: 50vh;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card-item1 {
+    width: 100%;
+    min-height: 350px !important;
+    height: 70vh;
+  }
 }

@@ -1,30 +1,7 @@
 @import url(var.css);
 @import url(./components/menu.css);
-
-.navbar-person {
-  width: 100%;
-  justify-content: end;
-  padding-right: 12px;
-}
-
-.nav-link {
-  color: var(--base-beige) !important;
-  opacity: 1;
-  transition: opacity 0.4s ease;
-  text-align: center;
-}
-
-.active .nav-link {
-  color: var(--base-brown) !important;
-}
-
-.nav-link:hover {
-  opacity: 0.8;
-}
-
-.navbar-toggler span {
-  color: #171717 !important;
-}
+@import url(./components/nav.css);
+@import url(./components/footer.css);
 
 .banner {
   height: 100vh;
@@ -171,7 +148,7 @@
   padding-bottom: 60px;
 }
 
-.card-item .card-content .content-details button {
+.card-item .card-content .content-details a {
   width: auto;
   position: absolute;
   right: 8px;
@@ -179,42 +156,6 @@
   display: flex;
   white-space: nowrap;
   text-align: center;
-}
-
-/* Footer */
-footer {
-  flex: 1;
-  background-color: #171717;
-  font-family: "Roboto", sans-serif;
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px 30px;
-  color: white;
-}
-
-.footer-content p,
-i {
-  color: rgba(255, 255, 255, 0.75);
-}
-
-.footer-student {
-  padding: 10px 0;
-}
-
-.footer-final p {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  margin-bottom: 0;
-
-  color: rgba(255, 255, 255, 0.5);
-  text-align: center;
-  padding: 60px;
 }
 
 .icon-list img {
@@ -262,14 +203,6 @@ i {
     flex-wrap: wrap;
     padding: 20px 100px;
   }
-
-  .footer-content {
-    flex-direction: row;
-  }
-
-  .footer-final {
-    width: 100%;
-  }
 }
 
 /* Parallax */
@@ -279,6 +212,7 @@ i {
   margin: 0 auto;
   text-align: center;
 }
+
 #parallax-world-of-ugg .title h1 {
   font-size: 35px;
   letter-spacing: 8px;
@@ -291,10 +225,12 @@ i {
   margin: 0 auto;
   text-align: justify;
 }
+
 #parallax-world-of-ugg .block-gray {
   background: #f2f2f2;
   padding: 60px;
 }
+
 #parallax-world-of-ugg .section-overlay-mask {
   position: absolute;
   top: 0;
@@ -320,6 +256,7 @@ i {
   background-repeat: no-repeat;
   background-position: top center;
 }
+
 #parallax-world-of-ugg .parallax-two {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -335,6 +272,7 @@ i {
   background-repeat: no-repeat;
   background-position: center center;
 }
+
 #parallax-world-of-ugg .parallax-three {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -388,16 +326,4 @@ i {
     padding: 30px 15px;
     width: 290px;
   }
-}
-
-.font-brown {
-  color: var(--base-brown);
-}
-
-.font-beige {
-  color: var(--base-beige);
-}
-
-.font-black {
-  color: var(--base-black);
 }

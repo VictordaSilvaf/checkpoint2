@@ -19,7 +19,8 @@
   background-color: #8a5e4e !important;
 }
 
-/* elements together */
+/* Links e Icones */
+
 .link-inherit a {
   color: inherit !important;
   transition: all 0.2s ease;
@@ -43,6 +44,37 @@
 .social-text {
   color: gray;
 }
+
+/* Animations */
+
+.animation-tittle{
+  animation: GoinToLeft;
+  animation-duration: 1.5s;
+}
+@keyframes GoinToLeft{
+  from {
+    margin-left: -500px;
+  }
+  to {
+    margin-left: 0px;
+  }
+}
+
+.animation-text{
+  animation: GoinToTop;
+  animation-duration: 1s;
+}
+
+@keyframes GoinToTop{
+  from {
+    margin-bottom: 1000px;
+  }
+  to {
+    margin-bottom: 0px;
+  }
+}
+
+  /* media  */
 
 @media (max-width: 260px) {
   .button-custom button {

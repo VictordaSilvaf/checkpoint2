@@ -13,3 +13,7 @@
 .text-beige {
   color: var(--base-beige);
 }
+
+.font-black {
+  color: var(--base-black);
+}
